@@ -11,6 +11,13 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+/**
+ * Klasa <code>GreetingProgramFXMLController</code> reprezentuje sterowanie 
+ * programu witającego użytkownika. Program ten wita użytkownika po imieniu, które
+ * zostaje wprowadzone przez pole tekstowe. Program wykrywa porę dnia - 
+ * w godzinach między 6 i 18 wita "Dzień dobry", w pozostałych godzinach "Dobry wieczór".
+ * @author AleksanderSklorz
+ */
 public class GreetingProgramFXMLController implements Initializable {
     @FXML 
     private TextField nameTextField;
@@ -38,5 +45,4 @@ public class GreetingProgramFXMLController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
 }
