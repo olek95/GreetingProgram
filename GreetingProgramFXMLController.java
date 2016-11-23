@@ -25,7 +25,7 @@ public class GreetingProgramFXMLController implements Initializable {
     private Button greetingButton; 
     @FXML
     private void showGreeting(ActionEvent event) {
-        String text = nameTextField.getText();
+        String text = nameTextField.getText().trim();
         if(!text.equals("")){
             Alert greetingAlert = new Alert(AlertType.INFORMATION);
             greetingAlert.setTitle("Powitanie");
@@ -43,6 +43,5 @@ public class GreetingProgramFXMLController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }    
 }
